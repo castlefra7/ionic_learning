@@ -1,3 +1,5 @@
+import { DataService } from "../services/data.service";
+
 export class Plat {
     nom: string;
     prix: number;

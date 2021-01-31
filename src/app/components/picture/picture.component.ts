@@ -10,7 +10,9 @@ export class PictureComponent implements OnInit {
 
   constructor(public photoService: PhotoService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.photoService.loadSaved();
+   }
 
 
   addPhotoToGallery() {
