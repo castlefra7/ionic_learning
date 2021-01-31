@@ -1,7 +1,9 @@
 import { LocationStrategy, HashLocationStrategy, PathLocationStrategy } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { AnotherprotectedComponent } from '../components/anotherprotected/anotherprotected.component';
+import { LocalisationComponent } from '../components/localisation/localisation.component';
 import { LoginComponent } from '../components/login/login.component';
 import { MenuComponent } from '../components/menu/menu.component';
 import { PictureComponent } from '../components/picture/picture.component';
@@ -41,6 +43,10 @@ const routes: Routes = [
     path: 'anotherprotected',
     component: AnotherprotectedComponent,
     canActivate: [LoggedInGuard]
+  },
+  {
+    path: 'localisation',
+    component: LocalisationComponent
   }
 ];
 
@@ -52,7 +58,8 @@ const routes: Routes = [
       useClass: HashLocationStrategy
     },
     AUTH_PROVIDERS,
-    LoggedInGuard
+    LoggedInGuard,
+    Geolocation
   ],
 })
 export class HomePageRoutingModule { }
