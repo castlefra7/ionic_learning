@@ -21,6 +21,16 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
+                "glob": "manifest.json",
+                "input": "src/manifest.json",
+                "output": "./assets"
+              },
+              {
+                "glob": "firebase-messaging-sw.js",
+                "input": "src/firebase-messaging-sw.js",
+                "output": "./assets"
+              },
+              {
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
@@ -101,6 +111,18 @@
             "styles": [],
             "scripts": [],
             "assets": [
+              
+              
+              {
+                "glob": "manifest.json",
+                "input": "src/manifest.json",
+                "output": "/assets"
+              },
+              {
+                "glob": "firebase-messaging-sw.js",
+                "input": "src/firebase-messaging-sw.js",
+                "output": "/assets"
+              },
               {
                 "glob": "favicon.ico",
                 "input": "src/",
