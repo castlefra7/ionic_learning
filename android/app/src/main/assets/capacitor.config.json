@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.mydomain.ioniclist",
   "appName": "ionic-list",
   "bundledWebRuntime": false,
   "npmClient": "npm",
